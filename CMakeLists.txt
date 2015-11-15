@@ -1,0 +1,10 @@
+project(project-euler C CXX)
+cmake_minimum_required(VERSION 2.8)
+
+add_executable(pr1 pr1.c)
+add_executable(pr2 pr2.c)
+add_executable(pr4 pr4.c)
+add_executable(pr41 pr41.cc)
+add_executable(pr118 pr118.c)
+add_executable(pr119 pr119.c)
+target_link_libraries(pr119 m)
