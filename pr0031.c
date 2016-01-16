@@ -7,7 +7,6 @@ int sum = 0;
 int cnt = 0;
 
 void dfs(const int curr) {
-  printf("%d\n", curr);
   if ( sum == GOAL ) {
     cnt++;
     return;
@@ -16,7 +15,7 @@ void dfs(const int curr) {
     return;
   if ( sum > GOAL )
     return;
-  size_t i;
+  int i;
   for (i = GOAL/coin[curr]; i >= 0; --i) {
     sum += i*coin[curr];
     dfs(curr+1);
